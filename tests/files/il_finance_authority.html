@@ -1,0 +1,537 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en" xml:lang="en" dir="ltr" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en" xml:lang="en" dir="ltr" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en" xml:lang="en" dir="ltr" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xml:lang="en" lang="en" dir="ltr" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> <!--<![endif]-->
+<!-- Add jQuery library -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://www.il-fa.com/sites/default/files/il-fa-icon.png" type="image/png" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="alternate" type="application/rss+xml" title="Illinois Finance Authority RSS" href="https://www.il-fa.com/rss.xml" />
+    <title>Illinois Finance Authority</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <style type="text/css" media="all">
+@import url("https://www.il-fa.com/modules/system/system.base.css?qcgmyo");
+@import url("https://www.il-fa.com/modules/system/system.menus.css?qcgmyo");
+@import url("https://www.il-fa.com/modules/system/system.messages.css?qcgmyo");
+@import url("https://www.il-fa.com/modules/system/system.theme.css?qcgmyo");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.il-fa.com/sites/all/modules/views_slideshow/views_slideshow.css?qcgmyo");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.il-fa.com/modules/comment/comment.css?qcgmyo");
+@import url("https://www.il-fa.com/sites/all/modules/date/date_api/date.css?qcgmyo");
+@import url("https://www.il-fa.com/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?qcgmyo");
+@import url("https://www.il-fa.com/sites/all/modules/date-time-field/css/smoothness/jquery-ui-1.8.14.custom.css?qcgmyo");
+@import url("https://www.il-fa.com/modules/field/theme/field.css?qcgmyo");
+@import url("https://www.il-fa.com/modules/node/node.css?qcgmyo");
+@import url("https://www.il-fa.com/modules/search/search.css?qcgmyo");
+@import url("https://www.il-fa.com/modules/user/user.css?qcgmyo");
+@import url("https://www.il-fa.com/sites/all/modules/views/css/views.css?qcgmyo");
+@import url("https://www.il-fa.com/sites/all/modules/ckeditor/css/ckeditor.css?qcgmyo");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.il-fa.com/sites/all/modules/ctools/css/ctools.css?qcgmyo");
+@import url("https://www.il-fa.com/sites/all/modules/lightbox2/css/lightbox.css?qcgmyo");
+@import url("https://www.il-fa.com/sites/all/modules/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle.css?qcgmyo");
+@import url("https://www.il-fa.com/sites/all/libraries/superfish/css/superfish.css?qcgmyo");
+@import url("https://www.il-fa.com/sites/all/libraries/superfish/style/default.css?qcgmyo");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.il-fa.com/sites/all/themes/ifa/css/ifa-style.css?qcgmyo");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.il-fa.com/sites/default/files/fontyourface/font.css?qcgmyo");
+</style>
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,regular&amp;subset=latin" media="all" />
+    <script type="text/javascript" src="https://www.il-fa.com/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="https://www.il-fa.com/misc/jquery-extend-3.4.0.js?v=1.4.4"></script>
+<script type="text/javascript" src="https://www.il-fa.com/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://www.il-fa.com/misc/drupal.js?qcgmyo"></script>
+<script type="text/javascript" src="https://www.il-fa.com/sites/all/modules/views_slideshow/js/views_slideshow.js?v=1.0"></script>
+<script type="text/javascript" src="https://www.il-fa.com/sites/all/modules/lightbox2/js/lightbox.js?qcgmyo"></script>
+<script type="text/javascript" src="https://www.il-fa.com/sites/all/libraries/jquery.cycle/jquery.cycle.all.js?qcgmyo"></script>
+<script type="text/javascript" src="https://www.il-fa.com/sites/all/libraries/json2/json2.js?qcgmyo"></script>
+<script type="text/javascript" src="https://www.il-fa.com/sites/all/modules/views_slideshow/contrib/views_slideshow_cycle/js/views_slideshow_cycle.js?qcgmyo"></script>
+<script type="text/javascript" src="https://www.il-fa.com/sites/all/modules/google_analytics/googleanalytics.js?qcgmyo"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-109819419-1", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.il-fa.com/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?qcgmyo"></script>
+<script type="text/javascript" src="https://www.il-fa.com/sites/all/libraries/superfish/superfish.js?qcgmyo"></script>
+<script type="text/javascript" src="https://www.il-fa.com/sites/all/libraries/superfish/supersubs.js?qcgmyo"></script>
+<script type="text/javascript" src="https://www.il-fa.com/sites/all/modules/superfish/superfish.js?qcgmyo"></script>
+<script type="text/javascript" src="https://www.il-fa.com/sites/all/themes/ifa/js/libs/modernizr-2.5.3.min.js?qcgmyo"></script>
+<script type="text/javascript" src="https://www.il-fa.com/sites/all/themes/ifa/js/script.js?qcgmyo"></script>
+<script type="text/javascript" src="https://www.il-fa.com/sites/all/themes/ifa/js/plugins.js?qcgmyo"></script>
+<script type="text/javascript" src="https://www.il-fa.com/sites/all/themes/ifa/js/projects.js?qcgmyo"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ifa","theme_token":"mkKMqgd_xl9cR39dCAr3Ijy3y6tj1FVyoUvG3AfxyVE","js":{"misc\/jquery.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/views_slideshow\/js\/views_slideshow.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.js":1,"sites\/all\/libraries\/json2\/json2.js":1,"sites\/all\/modules\/views_slideshow\/contrib\/views_slideshow_cycle\/js\/views_slideshow_cycle.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/ifa\/js\/libs\/modernizr-2.5.3.min.js":1,"sites\/all\/themes\/ifa\/js\/script.js":1,"sites\/all\/themes\/ifa\/js\/plugins.js":1,"sites\/all\/themes\/ifa\/js\/projects.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/views_slideshow\/views_slideshow.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date-time-field\/css\/smoothness\/jquery-ui-1.8.14.custom.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"sites\/all\/modules\/views_slideshow\/contrib\/views_slideshow_cycle\/views_slideshow_cycle.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/style\/default.css":1,"sites\/all\/themes\/ifa\/css\/ifa-style.css":1,"sites\/default\/files\/fontyourface\/font.css":1,"https:\/\/fonts.googleapis.com\/css?family=Source+Sans+Pro:600,regular\u0026subset=latin":1}},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"010101","box_color":"e1e1e1","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":1,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":0,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":0,"useragent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/60.0.3112.101 Safari\/537.36"},"viewsSlideshow":{"slider-block_1_1":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"pause":["viewsSlideshowControls","viewsSlideshowCycle"],"play":["viewsSlideshowControls","viewsSlideshowCycle"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0}},"viewsSlideshowPager":{"slider-block_1_1":{"top":{"type":"viewsSlideshowPagerFields","master_pager":"0"}}},"viewsSlideshowPagerFields":{"slider-block_1_1":{"top":{"activatePauseOnHover":0}}},"viewsSlideshowCycle":{"#views_slideshow_cycle_main_slider-block_1_1":{"num_divs":4,"id_prefix":"#views_slideshow_cycle_main_","div_prefix":"#views_slideshow_cycle_div_","vss_id":"slider-block_1_1","effect":"fade","transition_advanced":0,"timeout":5000,"speed":700,"delay":0,"sync":1,"random":0,"pause":1,"pause_on_click":0,"play_on_hover":0,"action_advanced":0,"start_paused":0,"remember_slide":0,"remember_slide_days":1,"pause_in_middle":0,"pause_when_hidden":0,"pause_when_hidden_type":"full","amount_allowed_visible":"","nowrap":0,"pause_after_slideshow":0,"fixed_height":1,"items_per_slide":1,"wait_for_image_load":1,"wait_for_image_load_timeout":3000,"cleartype":0,"cleartypenobg":0,"advanced_options":"{}","advanced_options_choices":0,"advanced_options_entry":""}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show"},"speed":"\u0027fast\u0027","autoArrows":false,"dropShadows":false,"disableHI":false},"plugins":{"supposition":false,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}}}});
+//--><!]]>
+</script>
+              
+
+  </head>
+      
+  <body class="html front not-logged-in one-sidebar sidebar-second page-node"  >
+  
+        <div id="page" class="page">
+    <!-- lisa -->
+<!-- ______________________ HEADER _______________________ -->
+  <header id="header" class="clearfix">
+    <div id="topbar" class="clearfix">
+          <div class="inner">
+          <div id="skip">
+              <a href="#main-menu">Jump to Navigation</a>
+          </div><!-- /skip -->
+          <div id="gov-names">
+              <a href="http://www2.illinois.gov/Pages/default.aspx" target="_blank">JB PRITZKER, GOVERNOR</a>&nbsp;&nbsp;|&nbsp;&nbsp;Eric R. Anderberg, Chair
+          </div>
+      </div><!-- /inner -->
+  </div><!-- /topbar -->
+               <div class="inner">
+          <div id="header-region">
+                            <a name="main-menu"></a><a href="/" title="Home" rel="home" id="logo">
+                  <img src="https://www.il-fa.com/sites/default/files/logo_1.png" alt="Home"/>
+              </a>
+                            <div class="region region-header">
+    <section id="block-superfish-1" class="block block-superfish  clearfix">
+  <div class="block-inner">
+              <h2 class="block-title">Main menu</h2>
+            <div class="content" >
+      <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-default"><li id="menu-218-1" class="active-trail first sf-item-1 sf-depth-1 sf-no-children"><a href="/" class="sf-depth-1 active">Home</a></li><li id="menu-489-1" class="middle sf-item-2 sf-depth-1 menuparent"><a href="/programs/programs" class="sf-depth-1 menuparent">Programs</a><ul><li id="menu-622-1" class="first sf-item-1 sf-depth-2 sf-no-children"><a href="/programs/agriculture" class="sf-depth-2">Agriculture</a></li><li id="menu-608-1" class="middle sf-item-2 sf-depth-2 sf-no-children"><a href="/programs/business" class="sf-depth-2">Business &amp; Industry</a></li><li id="menu-609-1" class="middle sf-item-3 sf-depth-2 sf-no-children"><a href="/programs/community" class="sf-depth-2">Community</a></li><li id="menu-610-1" class="middle sf-item-4 sf-depth-2 sf-no-children"><a href="/programs/education" class="sf-depth-2">Education</a></li><li id="menu-612-1" class="middle sf-item-5 sf-depth-2 sf-no-children"><a href="/programs/healthcare" class="sf-depth-2">Healthcare</a></li><li id="menu-3305-1" class="middle sf-item-6 sf-depth-2 sf-no-children"><a href="/programs/cwi" class="sf-depth-2">Clean Water SRF</a></li><li id="menu-3258-1" class="last sf-item-7 sf-depth-2 sf-no-children"><a href="/programs/c-pace" class="sf-depth-2">C-PACE</a></li></ul></li><li id="menu-3302-1" class="middle sf-item-3 sf-depth-1 menuparent"><a href="/programs/completed" class="sf-depth-1 menuparent">Projects</a><ul><li id="menu-3304-1" class="first sf-item-1 sf-depth-2 sf-no-children"><a href="/programs/completed/summary" class="sf-depth-2">Summary of PABS by Calendar Year</a></li><li id="menu-3303-1" class="last sf-item-2 sf-depth-2 sf-no-children"><a href="/programs/completed" class="sf-depth-2">Completed Projects for Calendar Years 2013-2017</a></li></ul></li><li id="menu-2707-1" class="middle sf-item-4 sf-depth-1 menuparent"><a href="/public-access" class="sf-depth-1 menuparent">Public Access</a><ul><li id="menu-547-1" class="first sf-item-1 sf-depth-2 sf-no-children"><a href="/public-access/board-documents/2020" class="sf-depth-2">Board Documents</a></li><li id="menu-2709-1" class="middle sf-item-2 sf-depth-2 sf-no-children"><a href="/public-access/financial-reports/2020" class="sf-depth-2">Financial Reports</a></li><li id="menu-531-1" class="middle sf-item-3 sf-depth-2 sf-no-children"><a href="/public-access/foia" class="sf-depth-2">FOIA Requests</a></li><li id="menu-848-1" class="last sf-item-4 sf-depth-2 sf-no-children"><a href="/public-access/policies" class="sf-depth-2">Key Policies</a></li></ul></li><li id="menu-498-1" class="middle sf-item-5 sf-depth-1 menuparent"><a href="/about" class="sf-depth-1 menuparent">About IFA</a><ul><li id="menu-499-1" class="first sf-item-1 sf-depth-2 sf-no-children"><a href="/about/board" class="sf-depth-2">Board Members</a></li><li id="menu-500-1" class="middle sf-item-2 sf-depth-2 sf-no-children"><a href="/about/executive" class="sf-depth-2">Executive Director</a></li><li id="menu-856-1" class="middle sf-item-3 sf-depth-2 sf-no-children"><a href="/about/procurement" class="sf-depth-2">Procurement</a></li><li id="menu-859-1" class="last sf-item-4 sf-depth-2 sf-no-children"><a href="/about/team" class="sf-depth-2">Join Our Team</a></li></ul></li><li id="menu-562-1" class="last sf-item-6 sf-depth-1 sf-no-children"><a href="/contact" class="sf-depth-1">Contacts</a></li></ul>    </div>
+  </div>
+</section> <!-- /block-inner /block -->  </div>
+
+          </div><!-- /header-region -->
+      </div><!-- /inner -->
+      </header> <!-- /header -->
+    <div id="title">
+      <div class="inner">
+                      <h1 class="title"></h1>
+               </div>
+    </div>
+
+        <div id="main" class="clearfix" role="main">
+                        <div class="inner">
+            <div id="content">
+                <div id="content-inner" class="column center">
+                                                            <div id="content-header">
+                        
+                                                                                                <div class="tabs"></div>
+                                                                                            </div> <!-- /#content-header -->
+                                        <div id="content-area">
+                          <div class="region region-content">
+    <div id="block-views-slider-block_1" class="block block-views  clearfix">
+  <div class="block-inner">
+                <div class="content" >
+      <div class="view view-slider view-id-slider view-display-id-block_1 view-dom-id-c295694cc316a9a37d307235d3d9729d">
+        
+  
+  
+      <div class="view-content">
+      
+  <div class="skin-default">
+          <div class="views-slideshow-controls-top clearfix">
+        <div id="widget_pager_top_slider-block_1_1" class="views-slideshow-pager-fields widget_pager widget_pager_top views_slideshow_pager_field">
+  <div id="views_slideshow_pager_field_item_top_slider-block_1_1_0" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-odd views-row-first" aria-controls="views_slideshow_cycle_div_slider-block_1_1_0">
+  <div class="views-field-field-slider-button">
+    <div class="views-content-field-slider-button">
+    <a href='#slideshow-0'></a>  </div>
+</div>
+</div>
+<div id="views_slideshow_pager_field_item_top_slider-block_1_1_1" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-even" aria-controls="views_slideshow_cycle_div_slider-block_1_1_1">
+  <div class="views-field-field-slider-button">
+    <div class="views-content-field-slider-button">
+    <a href='#slideshow-1'></a>  </div>
+</div>
+</div>
+<div id="views_slideshow_pager_field_item_top_slider-block_1_1_2" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-odd" aria-controls="views_slideshow_cycle_div_slider-block_1_1_2">
+  <div class="views-field-field-slider-button">
+    <div class="views-content-field-slider-button">
+    <a href='#slideshow-2'></a>  </div>
+</div>
+</div>
+<div id="views_slideshow_pager_field_item_top_slider-block_1_1_3" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-even views-row-last" aria-controls="views_slideshow_cycle_div_slider-block_1_1_3">
+  <div class="views-field-field-slider-button">
+    <div class="views-content-field-slider-button">
+    <a href='#slideshow-3'></a>  </div>
+</div>
+</div>
+</div>
+      </div>
+    
+    <div id="views_slideshow_cycle_main_slider-block_1_1" class="views_slideshow_cycle_main views_slideshow_main"><div id="views_slideshow_cycle_teaser_section_slider-block_1_1" class="views-slideshow-cycle-main-frame views_slideshow_cycle_teaser_section">
+  <div id="views_slideshow_cycle_div_slider-block_1_1_0" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-1 views-row-first views-row-odd" aria-labelledby='views_slideshow_pager_field_item_top_slider-block_1_1_0'>
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd views-row-first">
+    
+  <div class="views-field views-field-field-title-slider">        <div class="field-content"></div>  </div>  
+  <div class="views-field views-field-field-image-slider">        <div class="field-content"><img typeof="foaf:Image" src="https://www.il-fa.com/sites/default/files/energy_slide_082118-3a.jpg" width="630" height="595" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-slider-copy">        <div class="field-content"><p>Learn the latest about IFA’s new C-PACE strategic state support model for counties and municipalities in Illinois. <a href="https://www.il-fa.com/programs/c-pace">CLICK HERE </a>for more information.</p>
+</div>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_slider-block_1_1_1" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-2 views_slideshow_cycle_hidden views-row-even" aria-labelledby='views_slideshow_pager_field_item_top_slider-block_1_1_1'>
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+  <div class="views-field views-field-field-title-slider">        <div class="field-content"></div>  </div>  
+  <div class="views-field views-field-field-image-slider">        <div class="field-content"><img typeof="foaf:Image" src="https://www.il-fa.com/sites/default/files/participation_loanv6.jpg" width="630" height="595" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-slider-copy">        <div class="field-content"><p>IFA has created a participation loan program with veteran-owned businesses in mind. Please <a href="https://www.il-fa.com/programs/business" target="_blank">CLICK HERE</a> for more information.</p>
+</div>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_slider-block_1_1_2" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-3 views_slideshow_cycle_hidden views-row-odd" aria-labelledby='views_slideshow_pager_field_item_top_slider-block_1_1_2'>
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+  <div class="views-field views-field-field-title-slider">        <div class="field-content"></div>  </div>  
+  <div class="views-field views-field-field-image-slider">        <div class="field-content"><img typeof="foaf:Image" src="https://www.il-fa.com/sites/default/files/rotator-pab110917-4.jpg" width="630" height="595" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-slider-copy">        <div class="field-content"><p>The Illinois Finance Authority has over $24 billion in private activity bonds (PABs) outstanding. Click <a href="http://www.il-fa.com/programs/pab" target="_blank"> here </a>for more information on PABs benefits.</p>
+</div>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_slider-block_1_1_3" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-4 views_slideshow_cycle_hidden views-row-last views-row-even" aria-labelledby='views_slideshow_pager_field_item_top_slider-block_1_1_3'>
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+  <div class="views-field views-field-field-title-slider">        <div class="field-content"></div>  </div>  
+  <div class="views-field views-field-field-image-slider">        <div class="field-content"><img typeof="foaf:Image" src="https://www.il-fa.com/sites/default/files/rotator-cwi-040319-1.jpg" width="630" height="595" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-slider-copy">        <div class="field-content"><p><a href="http://www.il-fa.com/programs/cwi" target="_blank">Click here</a> for more information.<br />
+<a href="http://www.il-fa.com/sites/all/themes/ifa/docs/cwi/green_bond_reports_041620.pdf" target="_blank">Click here</a> for the Green Bond Reports.</p>
+</div>  </div></div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</div> <!-- /block-inner /block --><div id="block-system-main" class="block block-system  clearfix">
+  <div class="block-inner">
+                <div class="content" >
+      <article id="node-1" class="node node-homepage node-promoted node-teaser">
+  <div class="node-inner">
+    <header>
+              <h2><a href="/front-page">Home</a></h2>
+        
+                
+          </header>
+    <div class="content">
+      <div class="field field-name-field-home-content-title field-type-text field-label-above"><div class="field-label">Home Content Title:&nbsp;</div><div class="field-items"><div class="field-item even">Financing Business and Community Growth</div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>The Illinois Finance Authority is one of the largest issuers of private activity bonds in the nation.  Private activity bonds (PABs or federally tax-exempt conduit infrastructure bonds) enable the following types of charities and 501(c)(3) organizations to finance their capital infrastructure projects at generally lower interest rates and longer maturities – and to create long-term economic value for communities throughout Illinois:</p>
+<ul>
+<li>
+		hospitals and health systems;</li>
+<li>
+		schools – research universities, colleges, charter schools and others;</li>
+<li>
+		museums and cultural institutions; and</li>
+<li>
+		organizations that provide housing for seniors, students and working people</li>
+</ul>
+<p>PABs also allow a small number of other qualified entities or facilities (small farmers and manufacturers, solid waste disposal, and logistics facilities of regional importance) to do the same.<br />
+ <br />
+<strong>The Authority does not finance professional sports stadiums.</strong><br />
+ <br />
+<a href="http://www.il-fa.com/programs/pab" target="_blank">Click HERE</a> for additional important background information regarding private activity bonds or PABs.</p>
+</div></div></div><div class="field field-name-field-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="https://www.il-fa.com/sites/default/files/home_content2.jpg" width="300" height="180" alt="" /></div></div></div>    </div>
+          <footer>
+            
+              <div class="links"><ul class="links inline"><li class="node-readmore first last"><a href="/front-page" rel="tag" title="Home">Read more<span class="element-invisible"> about Home</span></a></li>
+</ul></div>
+            </footer>
+      </div> <!-- /node-inner -->
+</article> <!-- /node-->
+    </div>
+  </div>
+</div> <!-- /block-inner /block --><div id="block-views-home_icons-block" class="block block-views  clearfix">
+  <div class="block-inner">
+                <div class="content" >
+      <div class="view view-home-icons view-id-home_icons view-display-id-block view-dom-id-255c7bfb1bb9960dc60c2f64b4013e9d">
+        
+  
+  
+      <div class="view-content">
+      <div class="home-icon-table">
+<table class="views-table cols-0"  style="">
+    <!-- lisa's new template -->
+
+
+  <tbody>
+      <tr><td colspan="7" style="border-top:1px solid #bfbfbf;padding-top:28px;"></td></tr>
+      <tr>
+                
+              <td style="text-align: center;">
+
+                <a href="http://www.irs.gov/Tax-Exempt-Bonds?navmenu=menu1/
+&amp;navmenu=menu1/_"><img typeof="foaf:Image" src="https://www.il-fa.com/sites/default/files/styles/home-icon/public/icon_tax_0.gif?itok=x2tTrtZs" width="97" height="58" alt="" /></a>              </td>
+
+                    
+              <td style="text-align: center;">
+
+                <a href="http://emma.msrb.org/
+"><img typeof="foaf:Image" src="https://www.il-fa.com/sites/default/files/styles/home-icon/public/icon_emma.gif?itok=7mjYyLo3" width="97" height="58" alt="" /></a>              </td>
+
+                    
+              <td style="text-align: center;">
+
+                <a href="http://www.illinois.gov/dceo
+"><img typeof="foaf:Image" src="https://www.il-fa.com/sites/default/files/styles/home-icon/public/Icon_dceo.jpg?itok=iY70D1RK" width="100" height="60" alt="" /></a>              </td>
+
+                    
+              <td style="text-align: center;">
+
+                <a href="http://appointments.illinois.gov/
+"><img typeof="foaf:Image" src="https://www.il-fa.com/sites/default/files/styles/home-icon/public/icon_appointments_0.gif?itok=WKEd8X7-" width="97" height="58" alt="" /></a>              </td>
+
+                    
+              <td style="text-align: center;">
+
+                <a href="http://www.CleanWater.illinois.gov
+"><img typeof="foaf:Image" src="https://www.il-fa.com/sites/default/files/styles/home-icon/public/cwi_icon.gif?itok=mlpd83_i" width="97" height="58" alt="" /></a>              </td>
+
+                </tr>
+
+  </tbody>
+</table>
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</div> <!-- /block-inner /block -->  </div>
+                    </div>
+                    <a href="/rss.xml" class="feed-icon" title="Subscribe to Illinois Finance Authority RSS"><img typeof="foaf:Image" src="https://www.il-fa.com/misc/feed.png" width="16" height="16" alt="Subscribe to Illinois Finance Authority RSS" /></a>                                        <div style="clear:both;font-size:0px;line-height:0px;"><!--spacing div --></div>
+                </div><!-- /content-inner /content -->
+            </div><!-- /content -->
+                        <!-- <nav id="navigation" class="menu ">
+                                            </nav> -->
+                         <!-- /sidebar-first -->
+                        <aside id="sidebar-second" class="column sidebar second">
+                <div id="sidebar-second-inner">
+                      <div class="region region-sidebar-second">
+    <section id="block-views-home_pdfs-block" class="block block-views  clearfix">
+  <div class="block-inner">
+              <h2 class="block-title">Public Notice</h2>
+            <div class="content" >
+      <div class="view view-home-pdfs view-id-home_pdfs view-display-id-block view-dom-id-c67c477f50afcb722146e527c7f1d681">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="https://www.il-fa.com/sites/default/files/homepage_pdf/Guidelines%20for%20Public%20Comment05112020.pdf">Guidelines for Public Comment</a></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="https://www.il-fa.com/sites/default/files/homepage_pdf/fy_2021_meeting_schedule.pdf">Public Notice of FY 2021 Board Meetings </a></span>  </div>  </div>
+<br /><br />
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</section> <!-- /block-inner /block --><div id="block-views-home_sidebar-block" class="block block-views  clearfix">
+  <div class="block-inner">
+                <div class="content" >
+      <div class="view view-home-sidebar view-id-home_sidebar view-display-id-block view-dom-id-43fe448a593b5fe43d29137443450d3f">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last home-sidebar">
+      
+  <div class="views-field views-field-body">        <div class="field-content"><h2>
+	Notice Regarding COVID-19</h2>
+<p>The Authority has closed its physical offices but is responsive to the needs of our borrowers and the public during the COVID-19 outbreak.<br />
+	You may continue to contact IFA staff via email or leave them a voicemail message, as they are working remotely. Please call 312-651-1300 for further assistance.</p>
+<h2>
+	TEFRA Hearing</h2>
+<p>Friday, July 10, 2020 - 9:00 a.m.</p>
+<h2>
+	Board Meeting</h2>
+<p>Tuesday, July 14, 2020 - 9:30 a.m.<br />
+	160 N. LaSalle St.<br />
+	Suite S-1000<br />
+	Chicago, Illinois 60601</p>
+<!--<h2><p>	Technical Difficulties</h2>
+<p>We are experiencing technical difficulties with our landline telephones and you may receive a busy signal when you call. If you know the party you wish to reach, please email them directly. For general questions or if you do not know who to reach, please email info@il-fa.com, and someone will get back to you. On behalf of the Authority, we apologize for any inconvenience this may cause.</p>
+<p>
+	<a href="http://www.il-fa.com/sites/all/themes/ifa/docs/00-00-20-tefra-notice.pdf" target="_blank">Official Notice</a></p>
+<h2>
+	Conduit Financing Committee</h2>
+<p>Tuesday, June 11, 2020 - 8:30 a.m.<br />
+	<a href="http://www.il-fa.com/sites/all/themes/ifa/docs/06-11-20-conduit-notice.pdf" target="_blank">Official Notice</a></p>
+<h2>
+	Firefighter&#39;s Pension Investment Fund Board of Trustees</h2>
+<p>Monday, March 30, 2020<br />
+	Double Tree by Hilton Hotel<br />
+	3003 Corporate West Drive<br />
+	Lisle, IL 60532<br />
+	<a href="http://www.il-fa.com/sites/all/themes/ifa/docs/03-30-20-fpif-board-notice.pdf" target="_blank">Official Notice</a></p>
+<h2>
+	Audit, Budget, Finance, Investment and procurement Committee</h2>
+<p>Tuesday, June 11, 2020 - 9:00 a.m.<br />
+	<a href="http://www.il-fa.com/sites/all/themes/ifa/docs/06-11-20-audit-notice.pdf" target="_blank">Official Notice</a></p>
+<p>
+	<a href="http://www.il-fa.com/sites/all/themes/ifa/docs/04-09-20-board-notice.pdf" target="_blank">Official Notice</a></p>
+<h2>
+	Tax-Exempt Conduit Transactions Committee</h2>
+<p>Tuesday, April 9, 2020 - 8:30 a.m.<br />
+	<a href="http://www.il-fa.com/sites/all/themes/ifa/docs/04-09-209-tax-exempt-notice.pdf" target="_blank">Official Notice</a></p>
+<h2>
+	Governance, Personnel, Legislation and Ethics Committee</h2>
+<p>Tuesday, April 9, 2020 - 9:00 a.m.<br />
+	<a href="http://www.il-fa.com/sites/all/themes/ifa/docs/04-09-20-governance-notice.pdf" target="_blank">Official Notice</a><br />
+<h2>
+	Cancellation of Regular Meetings</h2>
+<p>Tuesday, December 11, 2018<br />
+	Tuesday, January 8, 2019<br />
+	Tuesday, February 12, 2019<br />
+	<a href="http://www.il-fa.com/sites/all/themes/ifa/docs/12-11-18-board-meeting-cancellation.pdf" target="_blank">Official Notice</a></p>
+<h2>
+	TEFRA Hearing</h2>
+<p>Friday, March 1, 2019 - 9:00 a.m.<br />
+	<a href="http://www.il-fa.com/sites/all/themes/ifa/docs/02-08-19-tefra-notice.pdf" target="_blank">Official Notice</a></p>
+<h2>
+	Joint Direct &amp; Alternative Financing and Tax-Exempt Conduit Transactions Committees</h2>
+<p>Thursday, February 14, 2019 - 8:30 a.m.<br />
+	<a href="http://www.il-fa.com/sites/all/themes/ifa/docs/02-14-19-tax-exempt-direct-alternative-joint-notice.pdf" target="_blank">Official Notice</a></p>
+<h2>
+	Audit, Budget, Finance, Investment and procurement Committee</h2>
+<p>Thursday, February 14, 2019 - 9:00 a.m.<br />
+	<a href="http://www.il-fa.com/sites/all/themes/ifa/docs/02-14-19-audit-notice.pdf" target="_blank">Official Notice</a></p>
+<h2>
+	direct and Alternative Financing Committee</h2>
+<p>Tuesday,September 10, 2019 - 8:30 a.m.<br />
+	<a href="http://www.il-fa.com/sites/all/themes/ifa/docs/09-10-19-direct-alternative-notice.pdf" target="_blank">Official Notice</a></p>
+<h2>
+	Audit, Budget, Finance, Investment and procurement Committee</h2>
+<p>Tuesday,September 10, 2019 - 9:00 a.m.<br />
+	<a href="http://www.il-fa.com/sites/all/themes/ifa/docs/09-10-19-audit-plus-notice-v2.pdf" target="_blank">Official Notice</a></p>
+<p>-->
+<p> </p>
+</div>  </div>  </div>
+<br /><br />
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</div> <!-- /block-inner /block -->  </div>
+                    <div style="clear:both;font-size:0px;line-height:0px;"><!--spacing div --></div>
+                </div>
+            </aside>
+             <!-- /sidebar-second -->
+        </div><!-- /inner -->
+        <div style="clear:both;font-size:0px;line-height:0px;"><!--spacing div --></div>
+    <div class="push"></div>
+    </div> <!-- /main -->
+    <!-- ______________________ FOOTER _______________________ -->
+        <footer id="footer">
+        <div class="inner">
+              <div class="region region-footer">
+    <div id="block-menu-menu-footer-menu" class="block block-menu  clearfix">
+  <div class="block-inner">
+                <div class="content" >
+      <ul class="menu"><li class="first leaf"><a href="/" title="" class="active">Home</a></li>
+<li class="expanded"><a href="/programs/agriculture">Programs</a><ul class="menu"><li class="first leaf"><a href="/programs/agriculture" title="">Agriculture</a></li>
+<li class="leaf"><a href="/programs/business" title="">Business &amp; Industry</a></li>
+<li class="leaf"><a href="/programs/community" title="">Community</a></li>
+<li class="leaf"><a href="/programs/education" title="">Education</a></li>
+<li class="leaf"><a href="/programs/c-pace">C-PACE</a></li>
+<li class="last leaf"><a href="/programs/healthcare" title="">Healthcare</a></li>
+</ul></li>
+<li class="expanded"><a href="/public-access" title="">Public Access</a><ul class="menu"><li class="first leaf"><a href="/public-access/board-documents/2018">Board Documents</a></li>
+<li class="leaf"><a href="/public-access/financial-reports/2018">Financial Reports</a></li>
+<li class="leaf"><a href="/public-access/policies">Key Policies</a></li>
+<li class="last leaf"><a href="/public-access/foia" title="">FOIA Requests</a></li>
+</ul></li>
+<li class="expanded"><a href="/about" title="">About IFA</a><ul class="menu"><li class="first leaf"><a href="/about/board">Board Members</a></li>
+<li class="leaf"><a href="/about/executive">Executive Director</a></li>
+<li class="leaf"><a href="/about/procurement">Procurement</a></li>
+<li class="last leaf"><a href="/about/team">Join Our Team</a></li>
+</ul></li>
+<li class="last leaf"><a href="/contact" title="">Contacts</a></li>
+</ul>    </div>
+  </div>
+</div> <!-- /block-inner /block -->  </div>
+                                </div>
+        <div id="bottom_bar">
+            <div class="inner">
+               <div id="copyright">Chicago 312.651.1300  •  Springfield 217.782.5792  •  Mt. Vernon 618.244.2424<br/>
+                    © 2012 Illinois Finance Authority. All Rights Reserved. 800.717.6066</div>
+               <div id="bottom_bar_right" style="text-align: right;">  <div class="region region-bottom-bar">
+    <div id="block-menu-menu-utility-menu-home" class="block block-menu  clearfix">
+  <div class="block-inner">
+                <div class="content" >
+      <ul class="menu"><li class="first leaf"><a href="http://link" class="div_util_nav">For Board Members</a></li>
+<li class="leaf"><a href="http://home.il-fa.com" target="_blank">For Employees</a></li>
+<li class="leaf"><a href="/privacy-statement" title="">Privacy Statement</a></li>
+<li class="leaf"><a href="/terms-conditions" title="">Terms &amp; Conditions</a></li>
+<li class="last leaf"><a href="mailto:webmaster@il-fa.com" title="">Webmaster</a></li>
+</ul>    </div>
+  </div>
+</div> <!-- /block-inner /block -->  </div>
+</div>
+                <div style="clear:both;font-size:0px;line-height:0px;"><!--spacing div --></div>
+            </div>
+        </div> <!-- /bottom bar -->
+    </footer> <!-- /footer -->
+    </div> <!-- /page -->
+      </body>
+</html>
